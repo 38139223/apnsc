@@ -92,7 +92,7 @@ RUN curl -sS https://getcomposer.org/installer | \
     php -- --install-dir=/usr/bin/ --filename=composer
 
 #3-1.ADD-GIT
-RUN apk add openssh-serve
+RUN apk add openssh-server
 RUN apk add git
 RUN mkdir -p /opt/deploy
 RUN git clone git@gitcode.com:server/SCM.git /opt/deploy/config
